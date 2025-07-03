@@ -1,0 +1,218 @@
+* {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#main{
+  background-image: url(./image/background2.png);
+  background-attachment: fixed;
+}
+
+
+.navibar {
+    background-color: black;
+    color: #e6d3ab;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+.nav-link:hover{
+    color: #e6d3ab !important;
+}
+
+.cover-photo img {
+  width: 100%;
+  max-width: 500px;   
+  height: auto; 
+  border-radius: 1rem; 
+  object-fit: cover;
+}
+
+
+.about-title {
+  color: #ffffff;
+}
+
+.about-img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+}
+
+
+.tools h1:hover {
+    padding-bottom: 4rem;
+    color: #f0c040 !important; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  background-color: #112240;                 
+  border-radius: 0.75rem;                      
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tools_picture-img:hover{
+  transition: transform(1.05);
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+}
+
+
+.projects {
+  background-color: #000000;
+}
+
+
+.project-card {
+  background-color: #112240;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.project-card .card-body {
+  padding: 1rem;
+}
+
+.project-card .card-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .card-text {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+
+
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+
+
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
