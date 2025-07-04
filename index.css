@@ -1,15 +1,12 @@
+/* FONT of ALL */
 * {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+/* FONT of ALL */
 
-#main{
-  background-image: url(./assets/background.png);
-  background-attachment: fixed;
-}
-
-
+/* NAVBAR */
 .navibar {
     background-color: #1A2D42;
     color: #d4d8dd;
@@ -22,20 +19,33 @@
 .nav-link:hover{
     color: #AAB7B7 !important;
 }
+/* NAVBAR */
+
+/* LANDING PAGE */
+#main{
+  background-image: url(./assets/background.png);
+  background-attachment: fixed;
+}
 
 .cover-photo img {
   width: 500px;  
   height: 450px; 
   border-radius: 1rem; 
   object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
+.cover-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+/* LANDING PAGE */
 
+/* ABOUT */
 .about{
   background-color: #1A2D42;
   color: #ffffff;
 }
-
 
 .about-img {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -43,9 +53,11 @@
 
 .about-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
+/* ABOUT */
 
+/* TOOLS */
 .tools{
   background-color: #d4d8dd;
   color: #112240;
@@ -72,8 +84,7 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -84,14 +95,14 @@
 }
 
 .flip-card-front {
-  background-color: #1A2D42; /* dark palette color */
+  background-color: #1A2D42;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .flip-card-back {
-  background-color: #2E4156; /* lighter palette color */
+  background-color: #2E4156;
   color: white;
   transform: rotateY(180deg);
   display: flex;
@@ -99,21 +110,19 @@
   align-items: center;
 }
 
-
 .card {
-  border: 1px solid rgba(255, 255, 255, 0.1); 
   background-color: #112240;                 
   border-radius: 0.75rem;                      
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* TOOLS */
 
-
+/* PROJECTS */
 .projects {
   background-color: #1A2D42;
   color: #d4d8dd;
 }
-
 
 .project-card {
   background-color: #2e4156;
@@ -149,7 +158,9 @@
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+/* PROJECT */
 
+/* CONTACT  and FOOTER*/
 .contact{
   background-color: #d4d8dd;
   color: #112240;
@@ -166,3 +177,4 @@
 .footer-icon:hover{
   transform: scale(1.1);
 }
+/* CONTACT and FOOTER */
